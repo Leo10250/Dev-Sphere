@@ -8,7 +8,7 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route path="/" element={<Home />}></Route>
+          <Route path="/Vite-Project/" element={<Home />}></Route>
         </Routes>
       </BrowserRouter>
     </>
