@@ -29,11 +29,7 @@ function Navbar() {
     <>
       <nav className="nav-bar">
         <div className="navbar-container">
-          <Link
-            to="/Vite-Project/"
-            className="navbar-logo"
-            onClick={closeMobileMenu}
-          >
+          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             {/* <FontAwesomeIcon icon={faHome} size="lg" className="fa-home" /> */}
             <h1>Leo Zhang</h1>
           </Link>
@@ -42,17 +38,13 @@ function Navbar() {
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <Link
-                to="/Vite-Project/"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
+              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                 Home
               </Link>
             </li>
             <li className="nav-item">
               <Link
-                to="/Vite-Project/projects"
+                to="/projects"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
@@ -61,7 +53,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <Link
-                to="/Vite-Project/contact"
+                to="/contact"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
@@ -70,7 +62,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <Link
-                to="/Vite-Project/resume"
+                to="/resume"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
@@ -79,7 +71,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <Link
-                to="/Vite-Project/sign-up"
+                to="/sign-up"
                 className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
