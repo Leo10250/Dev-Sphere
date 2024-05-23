@@ -27,10 +27,11 @@ function Navbar() {
   window.addEventListener("resize", showButton);
   return (
     <>
-      <nav className="navbar">
+      <nav className="nav-bar">
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-            <FontAwesomeIcon icon={faHome} size="lg" className="fa-home" />
+            {/* <FontAwesomeIcon icon={faHome} size="lg" className="fa-home" /> */}
+            <h1>Leo Zhang</h1>
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <FontAwesomeIcon icon={faBars} />
@@ -43,20 +44,29 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <Link
-                to="/services"
+                to="/projects"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Services
+                Projects
               </Link>
             </li>
             <li className="nav-item">
               <Link
-                to="/products"
+                to="/contact"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Products
+                Contact
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/resume"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                Resume
               </Link>
             </li>
             <li className="nav-item">
@@ -69,7 +79,7 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle="btn--primary">SIGN UP</Button>}
+          {/* {button && <Button buttonStyle="btn--primary">SIGN UP</Button>} */}
         </div>
       </nav>
     </>
