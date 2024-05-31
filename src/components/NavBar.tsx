@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./Navbar.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faHome } from "@fortawesome/free-solid-svg-icons";
-import personal_resume from "../assets/Wanquan-Zhang-Resume.pdf";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import personal_resume from "../assets/documents/Wanquan-Zhang-Resume.pdf";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -23,7 +23,6 @@ function Navbar() {
   };
 
   useEffect(() => {
-    console.log("====== ", location.pathname);
     showButton();
   }, []);
 

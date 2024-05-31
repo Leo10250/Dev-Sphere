@@ -2,8 +2,8 @@ import React, { ReactNode } from "react";
 import "./Button.scss";
 import { Link } from "react-router-dom";
 
-const STYLES = ["btn--primary", "btn--outline"];
-const SIZES = ["btn--medium", "btn--large"];
+const STYLES = ["btn-primary", "btn-outline"];
+const SIZES = ["btn-medium", "btn-large"];
 interface Props {
   children: ReactNode;
   color?: "primary" | "secondary" | "danger";

@@ -15,10 +15,15 @@
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    width: 95%;
+    width: 75%;
+
+    @media screen and (min-width: 961px) and (max-width: 1271px) {
+        width: 80%;
+    }
   }
   
   .navbar-logo {
+    font-weight: 600;
     color: #fff;
     cursor: pointer;
     font-size: 2rem;
@@ -43,11 +48,17 @@
   }
   
   .nav-item {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
     height: 80px;
   }
 
   .nav-item.active {
     border-bottom: 4px solid #fff;
+
+    @media screen and (max-width: 960px){
+        border-bottom: 0px;
+    }
   }
   
   .nav-links {
@@ -155,3 +166,5 @@
       transition: 250ms;
     }
   }
+
+  

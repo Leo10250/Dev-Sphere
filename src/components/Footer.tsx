@@ -1,8 +1,16 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import "./Footer.scss";
 
-const Footer = () => {
-  return <></>;
+interface Props {
+  children?: ReactNode;
+}
+
+const Footer = ({ children }: Props) => {
+  return (
+    <>
+      <div>children</div>
+    </>
+  );
 };
 
 export default Footer;

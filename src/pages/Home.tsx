@@ -22,7 +22,7 @@ const Home = () => {
 
   return (
     <>
-      <HeroContainer>Hero</HeroContainer>
+      <HeroContainer />
       {alertVisible && (
         <Alert onClose={handleAlertOnClose}>
           <strong>Holy guacamole!</strong> You should check in on some of those
