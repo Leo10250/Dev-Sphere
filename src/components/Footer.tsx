@@ -2,15 +2,15 @@ import React, { ReactNode } from "react";
 import "./Footer.scss";
 
 interface Props {
-  children?: ReactNode;
+    children?: ReactNode;
 }
 
 const Footer = ({ children }: Props) => {
-  return (
-    <>
-      <div>children</div>
-    </>
-  );
+    return (
+        <>
+            <div>{children}</div>
+        </>
+    );
 };
 
 export default Footer;

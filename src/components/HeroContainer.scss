@@ -2,7 +2,7 @@
     &-banner {
         display: flex;
         justify-content: center;
-        align-items: center; 
+        align-items: center;
         height: 1000px;
         background-color: #a8d0e6;
     }
@@ -38,7 +38,7 @@
         padding: 8px 40px;
         font-weight: 600;
         color: #000;
-        box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .1);
+        box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.1);
         border: 1px solid transparent;
         border-radius: 30px;
         margin: 0px 5px;
@@ -62,14 +62,13 @@ h3.hero-header {
 
 .selfie {
     &-link {
-        display: flex; 
-        justify-content: center; 
+        display: flex;
+        justify-content: center;
         align-items: flex-start;
         position: relative;
-        bottom: 15%; 
+        bottom: 15%;
         width: auto;
     }
-
 
     &-img {
         display: block;
@@ -82,6 +81,4 @@ h3.hero-header {
             cursor: pointer;
         }
     }
-  }
-
-
+}
