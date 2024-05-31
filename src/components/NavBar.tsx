@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faHome } from "@fortawesome/free-solid-svg-icons";
-import Button from "./Button";
+import personal_resume from "../assets/Wanquan-Zhang-Resume.pdf";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -11,6 +11,8 @@ function Navbar() {
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+
+  let location = useLocation();
 
   const showButton = () => {
     if (window.innerWidth <= 960) {
@@ -21,6 +23,7 @@ function Navbar() {
   };
 
   useEffect(() => {
+    console.log("====== ", location.pathname);
     showButton();
   }, []);
 
@@ -30,19 +33,26 @@ function Navbar() {
       <nav className="nav-bar">
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-            {/* <FontAwesomeIcon icon={faHome} size="lg" className="fa-home" /> */}
             <h1>Leo Zhang</h1>
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <FontAwesomeIcon icon={faBars} />
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li className="nav-item">
+            <li
+              className={`nav-item ${
+                location.pathname === "/" ? "active" : ""
+              }`}
+            >
               <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                 Home
               </Link>
             </li>
-            <li className="nav-item">
+            <li
+              className={`nav-item ${
+                location.pathname === "/projects" ? "active" : ""
+              }`}
+            >
               <Link
                 to="/projects"
                 className="nav-links"
@@ -51,7 +61,11 @@ function Navbar() {
                 Projects
               </Link>
             </li>
-            <li className="nav-item">
+            <li
+              className={`nav-item ${
+                location.pathname === "/contact" ? "active" : ""
+              }`}
+            >
               <Link
                 to="/contact"
                 className="nav-links"
@@ -61,25 +75,17 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link
-                to="/resume"
+              <a
+                href={personal_resume}
                 className="nav-links"
                 onClick={closeMobileMenu}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Resume
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                to="/sign-up"
-                className="nav-links-mobile"
-                onClick={closeMobileMenu}
-              >
-                Sign up
-              </Link>
+              </a>
             </li>
           </ul>
-          {/* {button && <Button buttonStyle="btn--primary">SIGN UP</Button>} */}
         </div>
       </nav>
     </>
