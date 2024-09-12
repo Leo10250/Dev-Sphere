@@ -14,7 +14,7 @@ const ProjectOverview = () => {
                         >
                             <img
                                 className="project-overview-round-img"
-                                src="src\assets\images\website.jpg"
+                                src="src/assets/images/website.jpg"
                                 alt="Personal Website"
                             />
                         </a>
@@ -37,7 +37,7 @@ const ProjectOverview = () => {
                         >
                             <img
                                 className="project-overview-img"
-                                src="src\assets\images\discord-icon.png"
+                                src="src/assets/images/discord-icon.png"
                                 alt="Discord Bot"
                             />
                         </a>
@@ -58,7 +58,7 @@ const ProjectOverview = () => {
                         >
                             <img
                                 className="project-overview-round-img"
-                                src="src\assets\images\webscrapper-icon.png"
+                                src="src/assets/images/webscrapper-icon.png"
                                 alt="Simple Webscrapper"
                             />
                         </a>
@@ -81,7 +81,7 @@ const ProjectOverview = () => {
                         >
                             <img
                                 className="project-overview-img"
-                                src="src\assets\images\predictor-icon.png"
+                                src="src/assets/images/predictor-icon.png"
                                 alt="Amazon-Question-Type-Predictor"
                             />
                         </a>
@@ -104,7 +104,7 @@ const ProjectOverview = () => {
                         >
                             <img
                                 className="project-overview-round-img"
-                                src="src\assets\images\UCSD_logo.png"
+                                src="src/assets/images/UCSD_logo.png"
                                 alt="UCSD Logo"
                             />
                         </a>
@@ -125,7 +125,7 @@ const ProjectOverview = () => {
                         >
                             <img
                                 className="project-overview-round-img"
-                                src="src\assets\images\Zoo_icon.jpg"
+                                src="src/assets/images/Zoo_icon.jpg"
                                 alt="San Diego Zoo"
                             />
                         </a>
@@ -148,7 +148,7 @@ const ProjectOverview = () => {
                         >
                             <img
                                 className="project-overview-round-img"
-                                src="src\assets\images\web-design.png"
+                                src="src/assets/images/web-design.png"
                                 alt="Elden Ring"
                             />
                         </a>
@@ -169,7 +169,7 @@ const ProjectOverview = () => {
                         >
                             <img
                                 className="project-overview-round-img"
-                                src="src\assets\images\counter_icon.png"
+                                src="src/assets/images/counter_icon.png"
                                 alt="Counter Icon"
                             />
                         </a>
@@ -190,7 +190,7 @@ const ProjectOverview = () => {
                         >
                             <img
                                 className="project-overview-img"
-                                src="src\assets\images\file-compressor-icon.png"
+                                src="src/assets/images/file-compressor-icon.png"
                                 alt="File Compressor Icon"
                             />
                         </a>
