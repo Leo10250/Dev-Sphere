@@ -1,4 +1,3 @@
-import React from "react";
 import "./ProjectOverview.scss";
 import WEBSITE_ICON from "../assets/images/website.jpg";
 import DISCORD_ICON from "../assets/images/discord-icon.png";

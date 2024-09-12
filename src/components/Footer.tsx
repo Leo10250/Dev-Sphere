@@ -1,17 +1,14 @@
 import React, { ReactNode } from "react";
 import "./Footer.scss";
 import "./HeroContainer.scss";
-// import "./../App.css";
+
+import EMAIL_ICON from "../assets/images/email Icon.jpg";
+import GITHUB_ICON from "../assets/images/Github Icon.jpg";
+import LINKEDIN_ICON from "../assets/images/Linkedin Icon.jpg";
 
 interface Props {
     children?: ReactNode;
 }
-
-// let navigate = useNavigate();
-
-// const handleButtonClick = () => {
-//     navigate("srcassetsdocumentsWanquan-Zhang-Resume.pdf");
-// };
 
 const Footer = ({ children }: Props) => {
     return (
@@ -23,7 +20,7 @@ const Footer = ({ children }: Props) => {
                     <a href="mailto: leoz10250@gmail.com">
                         <img
                             className="footer-img"
-                            src="src\assets\images\email Icon.jpg"
+                            src={EMAIL_ICON}
                             alt="email"
                         />
                     </a>
@@ -31,7 +28,7 @@ const Footer = ({ children }: Props) => {
                     <a href="http://github.com/Leo10250" target="_blank">
                         <img
                             className="footer-img"
-                            src="src\assets\images\Github Icon.jpg"
+                            src={GITHUB_ICON}
                             alt="github"
                         />
                     </a>
@@ -42,7 +39,7 @@ const Footer = ({ children }: Props) => {
                     >
                         <img
                             className="footer-img"
-                            src="src\assets\images\Linkedin Icon.jpg"
+                            src={LINKEDIN_ICON}
                             alt="linkedin"
                         />
                     </a>
