@@ -1,0 +1,49 @@
+.project-overview {
+    text-align: center;
+
+    &-header {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    &-img,
+    &-round-img {
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 135px;
+        width: auto;
+    }
+
+    &-round-img {
+        border-radius: 50%;
+    }
+
+    &-link {
+        text-decoration: none;
+        :hover {
+            text-decoration: underline;
+            text-decoration-color: black;
+        }
+    }
+
+    &-txt {
+        color: black;
+        font-size: 20px;
+        font-family: "Poppins", sans-serif;
+        word-wrap: break-word;
+    }
+}
+
+.flexbox {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    flex: 1 1 0px;
+    @media screen and (min-width: 767px) {
+        padding: 0px 40px;
+    }
+}
