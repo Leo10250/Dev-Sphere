@@ -1,5 +1,14 @@
 import React from "react";
 import "./ProjectOverview.scss";
+import WEBSITE_ICON from "../assets/images/website.jpg";
+import DISCORD_ICON from "../assets/images/discord-icon.png";
+import WEBSCRAPPER_ICON from "../assets/images/webscrapper-icon.png";
+import PREDICTOR_ICON from "../assets/images/predictor-icon.png";
+import UCSD_ICON from "../assets/images/UCSD_logo.png";
+import ZOO_ICON from "../assets/images/Zoo_icon.jpg";
+import WEB_DESIGN_ICON from "../assets/images/web-design.png";
+import COUNTER_ICON from "../assets/images/counter_icon.png";
+import FILE_COMPRESSOR_ICON from "../assets/images/file-compressor-icon.png";
 
 const ProjectOverview = () => {
     return (
@@ -14,7 +23,7 @@ const ProjectOverview = () => {
                         >
                             <img
                                 className="project-overview-round-img"
-                                src="src/assets/images/website.jpg"
+                                src={WEBSITE_ICON}
                                 alt="Personal Website"
                             />
                         </a>
@@ -37,7 +46,7 @@ const ProjectOverview = () => {
                         >
                             <img
                                 className="project-overview-img"
-                                src="src/assets/images/discord-icon.png"
+                                src={DISCORD_ICON}
                                 alt="Discord Bot"
                             />
                         </a>
@@ -58,7 +67,7 @@ const ProjectOverview = () => {
                         >
                             <img
                                 className="project-overview-round-img"
-                                src="src/assets/images/webscrapper-icon.png"
+                                src={WEBSCRAPPER_ICON}
                                 alt="Simple Webscrapper"
                             />
                         </a>
@@ -81,7 +90,7 @@ const ProjectOverview = () => {
                         >
                             <img
                                 className="project-overview-img"
-                                src="src/assets/images/predictor-icon.png"
+                                src={PREDICTOR_ICON}
                                 alt="Amazon-Question-Type-Predictor"
                             />
                         </a>
@@ -104,7 +113,7 @@ const ProjectOverview = () => {
                         >
                             <img
                                 className="project-overview-round-img"
-                                src="src/assets/images/UCSD_logo.png"
+                                src={UCSD_ICON}
                                 alt="UCSD Logo"
                             />
                         </a>
@@ -125,7 +134,7 @@ const ProjectOverview = () => {
                         >
                             <img
                                 className="project-overview-round-img"
-                                src="src/assets/images/Zoo_icon.jpg"
+                                src={ZOO_ICON}
                                 alt="San Diego Zoo"
                             />
                         </a>
@@ -148,7 +157,7 @@ const ProjectOverview = () => {
                         >
                             <img
                                 className="project-overview-round-img"
-                                src="src/assets/images/web-design.png"
+                                src={WEB_DESIGN_ICON}
                                 alt="Elden Ring"
                             />
                         </a>
@@ -169,7 +178,7 @@ const ProjectOverview = () => {
                         >
                             <img
                                 className="project-overview-round-img"
-                                src="src/assets/images/counter_icon.png"
+                                src={COUNTER_ICON}
                                 alt="Counter Icon"
                             />
                         </a>
@@ -190,7 +199,7 @@ const ProjectOverview = () => {
                         >
                             <img
                                 className="project-overview-img"
-                                src="src/assets/images/file-compressor-icon.png"
+                                src={FILE_COMPRESSOR_ICON}
                                 alt="File Compressor Icon"
                             />
                         </a>
