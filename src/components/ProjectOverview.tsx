@@ -29,7 +29,7 @@ const ProjectOverview = () => {
 
                         <a
                             className="project-overview-link"
-                            href="https://github.com/Leo10250/Vite-Project"
+                            href="https://github.com/Leo10250/Dev-Sphere"
                             target="_blank"
                         >
                             <p className="project-overview-txt">
